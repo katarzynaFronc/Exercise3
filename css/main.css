@@ -1,0 +1,140 @@
+:root {
+  --color-primary: #185cff;
+  --color-secondary: #002b4e;
+  --color-tetiary: #f0f9ff;
+  --color-helper-blue-1: #194060;
+  --color-helper-blue-2: #607d94;
+  --color-helper-blue-3: #c9dcec;
+  --color-black: #292d33;
+  --color-grey: #9497a1;
+  --color-background: #292d33;
+  --color-red: #c14040;
+  --color-white: #ffffff;
+  --color-text: var(--color-white);
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ----- Main header ------------- */
+
+.main-header {
+  padding: 40px 0;
+}
+
+.main-header__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*----------------------------------*/
+
+/* ------- Main nav -----------------*/
+.main-nav {
+}
+
+.main-nav__link {
+  padding: 5px 20px;
+  margin: 0 5px;
+  text-decoration: none;
+  color: var(--color-grey);
+  letter-spacing: -0.01em;
+  font-weight: 500;
+}
+
+.main-nav__link:hover,
+.main-nav__link:active {
+  color: var(--color-black);
+  font-weight: 600;
+}
+
+/*----------------------------------*/
+
+/* ------ Button --------------------*/
+.button {
+  border: none;
+  border-radius: 6px;
+  padding: 10px 14px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  font-family: "Manrope", sans-serif;
+  min-width: 170px;
+
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.button + .button {
+  margin-left: 20px;
+}
+
+.button--primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.button--white {
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
+
+.buttons2 {
+  display: flex;
+  align-items: center;
+}
+
+/*----------------------------------*/
+
+/* TODO: implement dropdown properly */
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* --------- Jumbotron ----------- */
+.jumbotron {
+}
+
+.jumbotron__container {
+  display: flex;
+  flex-direction: row;
+}
+
+.jumbotron__image {
+  position: absolute;
+  max-width: 780px;
+}
+
+.jumbotron__container > div {
+  width: 50%;
+}
